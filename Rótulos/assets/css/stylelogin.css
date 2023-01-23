@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;/*Propriedade que permite incluir o preenchimento da borda na largura e altura total de um elemento*/
+     
+}
+
+html, body{
+    height: 100%; /*Permite ocupar 100% da altura da página*/
+    
+}
+
+body{
+    color: #16710f;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url(../img/wp1.jpg);
+    background-size: cover;
+    display: flex; /*Mantem um layout flexível dentro do seu elemento pai. Independente das suas dimensões.*/
+    flex-direction: column; /*Define que o eixo principal será o vertical (uma coluna)*/
+}
+
+.conteudo{
+    flex: 1 0 auto; /*Permite encolher até o seu tamanho mínimo para caber no container, mas não absorve o espaço livre extra do container flexível*/
+}
+
+.content-center{
+    width: 100%; /*Vai poder ocupar a largura máx do container*/
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow:5px 5px 90px 5px rgb(151, 150, 150);
+}
+
+.content-center img{
+    width: 70%;
+}
+
+.content-center .logo{/*criando uma subclasse para formatar a imagem*/
+    text-align: center;
+}
+
+.content-center .titulo1{
+    text-align: center;
+    color: #16710f;
+}
+
+.content-center .titulo2{
+    text-align: center;
+    color: #597e52;
+}
+
+.content-center form{
+    margin: 20px;
+}
+
+.content-center input,
+.content-center button{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 14px;
+}
+
+.content-center input{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid#ccc;
+    color: #16710f;
+}
+
+.content-center input,
+.content-center button{
+    outline-color: rgb(135, 154, 192);
+}
+
+.content-center button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #16710f;
+    color: #fff;
+    border: none;
+    width: 80px;
+}
+
+.content-center .botao{
+    text-align: center;
+}
+.content-center button:hover{
+    background-color: #16710f;
+    cursor: pointer; /*vira a mãozinha*/
+}
+
+.content-center button:active{ /*Para os cliques*/
+    background-color: #16710f;
+}
+
+.footer-content{
+    text-align: center;
+    color: #fff;
+    flex-shrink: 0; /*Propriedade que define a proporção que um item deve encolher caso seja necessário(quando a tela diminui). Trabalha nos valores 0,1 e 2*/
+}
+
+.footer-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    
+}
